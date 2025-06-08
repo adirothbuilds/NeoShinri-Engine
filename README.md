@@ -1,6 +1,6 @@
-# NeoShinri
+# NeoShinri™
 
-NeoShinri is a distributed AI agent engine designed for collaborative, role-based task execution.
+NeoShinri™ is a distributed AI agent engine designed for collaborative, role-based task execution.
 
 > A fusion of protocol, memory, and modular agents — NeoShinri is the foundation for building scalable, autonomous, and evolvable AI systems.
 
