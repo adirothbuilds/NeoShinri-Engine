@@ -13,9 +13,9 @@ Client → Controller → Tunnel → Agent → Tunnel → Controller → Client.
 
 ### Phase 1: Project Scaffolding
 
-- [ ] Create base project structure under `neoshinri_mvp/`
-- [ ] Add `README.md` with MVP goal and structure explanation
-- [ ] Define `.gitignore`, `requirements.txt`, and minimal `docker-compose.yaml`
+- [x] Create base project structure under `neoshinri/`
+- [x] Add `README.md` with MVP goal and structure explanation
+- [x] Define `.gitignore`, `requirements.txt`, and minimal `docker-compose.yaml`
 
 ### Phase 2: Shared Protocol Definition
 
