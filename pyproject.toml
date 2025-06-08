@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neoshinri"
+version = "0.1.0"
+description = "Distributed AI agent orchestration engine"
+authors = [
+    { name="Adi Roth" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "httpx",
+]
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
