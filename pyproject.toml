@@ -17,6 +17,7 @@ dependencies = [
     "pydantic",
     "httpx",
 ]
+license = { text = "NSPL" }
 
 [tool.black]
 line-length = 100
