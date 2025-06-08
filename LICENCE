@@ -1,22 +1,70 @@
 <!-- markdownlint-disable MD041 -->
-MIT License
+NeoShinri Public License (NSPL) v1.0  
+Copyright © 2025 Adi Roth  
+NeoShinri™ is a trademark of Adi Roth. All rights reserved.
 
-Copyright (c) 2025 Adi Roth
+1. PURPOSE  
+The goal of this license is to enable full transparency, learning, and community usage of the NeoShinri engine, while preventing its commercialization as a standalone product without express permission. NeoShinri is a system of the people, and no single entity may privatize its core.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+2. FREE USAGE  
+This software is free to use, study, modify, and run for:
+- Personal use
+- Educational use
+- Research use
+- Internal use within organizations (non-commercial purposes)
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+No registration, payment, or license request is needed for these uses.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+3. COMMERCIAL RESTRICTIONS  
+You MAY NOT:
+- Sell NeoShinri, or any derivative version of it, as a standalone commercial product.
+- Offer NeoShinri or a modified version as a paid SaaS/cloud-hosted product.
+- Rebrand NeoShinri under another name and market it commercially.
+- Monetize access to a hosted version of NeoShinri without prior written approval.
+- Use the name "NeoShinri" or associated logos/terms for marketing any commercial product or service.
+
+Doing so is a violation of this license and the ethical principles of the project.
+
+4. ALLOWED COMMERCIAL USES  
+You MAY:
+- Use NeoShinri as a component within a larger commercial system (e.g. an AI assistant, analytics platform), provided NeoShinri is not the core product being marketed.
+- Offer commercial services such as consulting, integrations, or agent development that utilize NeoShinri, as long as you do not rebrand or sell the engine itself.
+
+5. ATTRIBUTION REQUIREMENT  
+If you use NeoShinri in any commercial, public-facing product or service (even as a component), you MUST clearly credit:
+
+"Powered by NeoShinri, an open-source engine created by Adi Roth."
+
+This credit must appear in:
+- Product documentation or About page
+- Any public-facing UI or dashboard, if NeoShinri features are visible to users
+
+6. TRADEMARK NOTICE  
+NeoShinri™ is a registered/trademarked name of Adi Roth.  
+The use of the name, logo, or branding of NeoShinri in any commercial, promotional, or representational context is prohibited without written permission.
+
+Use of the name for community education, open-source collaboration, or proper attribution is permitted.
+
+7. COMMERCIAL LICENSE OPTION  
+Entities wishing to:
+- Offer NeoShinri as a paid service
+- Rebrand or modify and market NeoShinri
+- Include it as a core component in a monetized product
+
+...must contact Adi Roth to request a commercial license.  
+Permission may be granted or denied based on project goals, ethics, and transparency.
+
+8. NO WARRANTY  
+This software is provided "as-is", without any warranty or guarantee of performance, security, or reliability.  
+The author is not responsible for any loss, damage, or misuse of the software, directly or indirectly.
+
+9. ETHICAL PRINCIPLES  
+NeoShinri was built as a system for transparent, decentralized, people-first agent orchestration.  
+All users are expected to uphold these values and contribute back where possible.
+
+Violating the spirit of this license may result in community rejection and formal action.
+
+---
+
+For inquiries or commercial use requests, contact:  
+Adi Roth – adi.build.balance@gmail.com
