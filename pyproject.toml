@@ -16,6 +16,8 @@ dependencies = [
     "uvicorn[standard]",
     "pydantic",
     "httpx",
+    "pytest",
+    "pytest-cov",
 ]
 license = { text = "NSPL" }
 
@@ -24,3 +26,18 @@ line-length = 100
 
 [tool.isort]
 profile = "black"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--cov=neoshinri", "--cov-report=term-missing"]
+
+[tool.coverage.run]
+source = ["neoshinri"]
+branch = true
+
+[tool.coverage.report]
+omit = [
+    "*/__init__.py",
+    "*/__pycache__/*",
+]
+show_missing = true

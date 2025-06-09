@@ -19,8 +19,8 @@ Client → Controller → Tunnel → Agent → Tunnel → Controller → Client.
 
 ### Phase 2: Shared Protocol Definition
 
-- [ ] Define `ACPMessage` schema in `shared/acp_message.py`
-- [ ] Define common constants for agent roles and task types
+- [x] Define `ACPMessage` schema in `shared/protocols/acp.py`
+- [x] Define common constants for agent roles and task types
 
 ### Phase 3: Controller (Core Brain)
 
