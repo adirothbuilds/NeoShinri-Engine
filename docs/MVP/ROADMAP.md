@@ -24,10 +24,10 @@ Client → Controller → Tunnel → Agent → Tunnel → Controller → Client.
 
 ### Phase 3: Controller (Core Brain)
 
-- [ ] Create `controller/main.py` with FastAPI entrypoint
-- [ ] Implement basic `Task Planner` (static task generator)
-- [ ] Implement `Routing Logic` to dispatch to one predefined agent role
-- [ ] Send REST request to Tunnel with structured ACPMessage
+- [x] Create `controller/main.py` with FastAPI entrypoint
+- [x] Implement basic `Task Planner` (static task generator)
+- [x] Implement `Routing Logic` to dispatch to one predefined agent role
+- [x] Send REST request to Tunnel with structured ACPMessage
 
 ### Phase 4: Tunnel (Transport Layer)
 
