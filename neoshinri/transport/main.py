@@ -4,6 +4,7 @@ from neoshinri.shared.protocols.constants import MessageType
 
 app = FastAPI()
 
+
 # Placeholder for Dispatcher
 def dispatcher(message: dict):
     """
@@ -13,6 +14,7 @@ def dispatcher(message: dict):
     agent_endpoint = f"http://mock-agent/{message['type']}"
     return {"endpoint": agent_endpoint, "status": "mock-dispatched"}
 
+
 # Placeholder for Memory Proxy
 def memory_proxy():
     """
@@ -21,13 +23,19 @@ def memory_proxy():
     # TODO: Replace with actual memory proxy logic
     return {"context": "dummy-context"}
 
+
 def acp_translator(message: dict):
     """
     Parses and validates incoming messages using ACPMessage and MessageType.
     """
     try:
         # Validate required fields
-        if "sender" not in message or "receiver" not in message or "message_type" not in message or "content" not in message:
+        if (
+            "sender" not in message
+            or "receiver" not in message
+            or "message_type" not in message
+            or "content" not in message
+        ):
             raise HTTPException(status_code=400, detail="Invalid ACP message format")
         # Validate message_type
         if message["message_type"] not in MessageType._value2member_map_:
@@ -37,6 +45,7 @@ def acp_translator(message: dict):
         return acp_msg
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"ACP translation error: {str(e)}")
+
 
 @app.post("/tunnel")
 async def tunnel(request: Request):
@@ -50,7 +59,7 @@ async def tunnel(request: Request):
         return {
             "status": "success",
             "dispatch_result": dispatch_result,
-            "memory_context": memory_proxy()
+            "memory_context": memory_proxy(),
         }
     except HTTPException as e:
         raise e

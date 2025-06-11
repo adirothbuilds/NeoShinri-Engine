@@ -2,13 +2,16 @@ import json
 from typing import Any, Dict
 from .constants import MessageType
 
+
 class ACPMessage:
     """
     Base class for the Agent Communication Protocol (ACP) schema.
     Represents a message exchanged between AI agents.
     """
 
-    def __init__(self, sender: str, receiver: str, message_type: MessageType, content: Dict[str, Any]):
+    def __init__(
+        self, sender: str, receiver: str, message_type: MessageType, content: Dict[str, Any]
+    ):
         """
         Initialize an ACPMessage.
 
@@ -71,7 +74,9 @@ class ACPMessage:
 
 
 # Helper functions
-def encode_acp_message(sender: str, receiver: str, message_type: MessageType, content: Dict[str, Any]) -> str:
+def encode_acp_message(
+    sender: str, receiver: str, message_type: MessageType, content: Dict[str, Any]
+) -> str:
     """
     Helper to encode an ACPMessage to JSON.
 
