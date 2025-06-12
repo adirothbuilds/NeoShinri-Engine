@@ -10,8 +10,8 @@ def dispatcher(message: dict):
     """
     Routes the message to the correct Agent REST endpoint.
     """
-    # TODO: Implement actual routing logic
-    agent_endpoint = f"http://mock-agent/{message['type']}"
+    # Use 'message_type' instead of 'type' for endpoint
+    agent_endpoint = f"http://mock-agent/{message['message_type']}"
     return {"endpoint": agent_endpoint, "status": "mock-dispatched"}
 
 
@@ -27,8 +27,25 @@ def memory_proxy():
 def acp_translator(message: dict):
     """
     Parses and validates incoming messages using ACPMessage and MessageType.
+    Accepts both dict and JSON string body (from controller/main.py @app.post("/process")).
     """
     try:
+        # If message is a JSON string, parse it
+        import json
+
+        if isinstance(message, str):
+            message = json.loads(message)
+        # If message is a dict with a single string value (from controller), parse that string
+        if (
+            isinstance(message, dict)
+            and len(message) == 1
+            and isinstance(next(iter(message.values())), str)
+        ):
+            # Try to parse the only value as JSON
+            try:
+                message = json.loads(next(iter(message.values())))
+            except Exception:
+                pass  # If not JSON, keep as is
         # Validate required fields
         if (
             "sender" not in message

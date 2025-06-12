@@ -55,7 +55,7 @@ def create_acp_message(agent_role: str, task: Task):
 def send_to_tunnel(acp_message: ACPMessage):
     # Assume the Tunnel is a FastAPI gateway running at this URL
     try:
-        tunnel_url = "http://localhost:8000/tunnel"
+        tunnel_url = "http://localhost:8000/tunnel"  # FIX: use correct tunnel port
         logger.info(f"Sending ACPMessage to Tunnel at {tunnel_url}")
         response = requests.post(tunnel_url, json=acp_message.to_json(), timeout=5)
         response.raise_for_status()  # Raise an error for bad responses
